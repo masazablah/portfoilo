@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-header{
+    background-color: #FFF2F6
+}
+
+
+
+.title{
+  
+    padding-top: 70px;
+    padding-left: 100px;
+   
+}
+.title h3{
+    color: #C19E9D;
+    font-size:20px ;
+    font-weight: bold; 
+}
+
+.title p{
+    max-width: 500px;
+    font-size: 15px;
+    color: gray;
+    line-height: 1.5;
+}
+
+.buttons{
+    
+    margin-top: 10px;
+}
+
+.projects-button{
+    background-color: #C19E9D;
+    color: white;
+    border-radius: 8px;
+    width: 80px;
+    height: 30px;
+    border-style: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.linkedin-button{
+    margin-left: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.image img{
+    height: 270px;
+    width: 310px;
+    
+    float: right;
+    margin-top: 60px;
+    margin-right: 100px;
+   
+}
+
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+ul {
+   
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: white;
+    color: #C19E9D;
+  }
+
+  .contact{
+   display: flex;
+   background-color:white;
+   border-radius: 10%;
+   height: 30px;
+   width: 80px;
+  color: #C19E9D;
+   justify-content: center;
+   align-items: center;
+border-color: #C19E9D;
+
+  }
+   
+
+  .logo{
+    height: 30px;
+    width: 30px;
+   
+  }
+
+  .projects-main{
+   text-align: center;
+   margin-top: 100px;
+   font-size: 30px;
+   color: #373737;
+   text-decoration: underline;
+   text-decoration-color: #C19E9D;
+   text-underline-offset: 10px;
+   
+  }
+
+  .project1{
+    
+    margin-left: 275px;
+    margin-top: 100px;
+    border: 0 solid gray;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 70px;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 55px;
+  }
+  
+  .project1 h2{
+    
+    color: #373737;
+  }
+
+  .project1 p{
+    padding-top: 30px;
+    max-width: 300px;
+    font-size: 15px;
+    color: gray;
+    line-height: 1.5;
+  }
+
+.project1 button{
+  height: 35px;
+  width: 110px;
+  border-radius: 40px;
+  color: black;
+  font-size: 13px;
+  border-color: black;
+  font-weight: bold;
+  background-color: white;
+}
+
+  .cookley-img{
+    float: right;
+    width: 375px;
+    height: 330px;
+    margin-top: 100px;
+    margin-right: 299px;
+    border: 0 solid gray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  
