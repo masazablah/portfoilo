@@ -343,11 +343,16 @@ nav .fa-regular ,nav .fa-solid{
       padding-top: 50px;
       z-index: 2;
       transition: right 0.5s;
+      color: white;
   }
 
   nav ul li {
       display: block;
       margin: 25px;
+  }
+
+  nav ul li a{
+    color: white;
   }
 
   nav ul .fa-regular{
