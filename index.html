@@ -1,88 +1,161 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My portfoilo</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
 
-    <body>
-     
-        <header id="main-header">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masa Zablah - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
             <nav>
-                <div>
-                   <img src="images/cv.png" alt="" class="logo"> portfoilo
-                    
-                </div>
-                <ul>
-                    <li><a href="default.asp">Home</a></li>
-                    <li><a href="news.asp">Projects</a></li>
-                    <li><a href="contact.asp">About</a></li>
-                    
-                  </ul>
-
-                  <button type="button" class="contact">Contact Me</button>
-                
+                <img src="images/MASA.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-           
-           <div  class="image">
-            <img src="images/profile.png" alt="profile picture">
-           </div> 
-           <div class="title" >
+            <div class="image">
+                <img src="images/pink.png" alt="" >
+            </div>
+            <div class="header-text">
+                <p>Frontend Devloper</p>
+                <h1>Hello, My name is <br><span> Masa</span> Zablah</h1>
+                
+            </div>
             
-            <h3>Frontend Developer</h3>
-            <br>
-            <h1>Hello, my name is <br>Masa Zablah</h1>
-            <br>
-            <p>I am passionate about creating beautiful and user-friendly websites. I specialize in HTML, CSS, and JavaScript, and I'm always eager to learn new technologies.
-                 I'm excited to collaborate on projects that challenge me and allow me to grow as a developer.</p>
-                 <br>
-
-                 <div class="buttons">
-                    <button class="projects-button">Projects</button>
-                    <button class="linkedin-button">LinkedIn</button>
-                </div>
-
-                <div> <br> <br></div>
         </div>
-    
-       
-        </header>
+    </div>
 
-        <main>
-            <div>
-                <h1 class="projects-main">Projects</h1>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/masaprofile.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am passionate about creating beautiful and user-friendly websites. I specialize in HTML, CSS, and JavaScript, and I'm always eager to learn new technologies.
+                        I'm excited to collaborate on projects that challenge me and allow me to grow as a developer.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Developement</span><br> HTML<br> CSS <br> Java Script</li>
+                                <li><span>UI/UX</span><br> Designing Web/App Interfaces</li>
+                                <li><span>Other languages</span><br> Java <br>C++</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024-Present</span><br> Front-End Developement trainer at Foothill Technology Solutions</li>
+                                <li><span>2019-2024</span><br>B.Sc of Computer Engineering</li>
+                                <li><span>2019</span><br> High School - Tawjihi</li>
+                            </ul>
+                        </div>
+                </div>
             </div>
+        </div>
+    </div>
 
-          
-            <div  class="project1">
-                <h2>Cookely</h2>
-                <p>Cookely is a website for food recipes. It has categories for different food types, and you can view the datails for each recipe,
-                    like, and save it. Also you can add your own recipe! <br> <br>
-    
-                </p>
-               <button>View Project</button>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title"> My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>Cookely</h2>
+                    <p>Cookely is a website for food recipes. It has categories for different food types, and you can view the datails for each recipe,
+                        like, and save it. Also you can add your own recipe! </p>
+                        <button href="#">View Project</button>
+                </div>
+                <div>
+                    <h2>awes</h2>
+                    <p>The aswe.project API is a backend API designed to support a job board platform. It enables users to interact with job listings, search for jobs, and submit applications. This API follows modern
+                        REST principles and is built using Node.js.
+                         </p>
+                        <button href="#">View Project</button>
+                </div>
+                <div>
+                    <h2>Sky-Scanner</h2>
+                    <p>Sky Scanner is an application that helps Passengers to book flight tickets online, with different airlines, and many
+                        other features for admin and user like deleting or updating.
+                         </p>
+                        <button href="#">View Project</button>
+                </div>
             </div>
-            <img src="images/recipe.jpg" alt="cookley website" class="cookley-img">
-            
-        
+        </div>
 
-            <div  class="project1">
-                <h2>Cookely</h2>
-                <p>Cookely is a website for food recipes. It has categories for different food types, and you can view the datails for each recipe,
-                    like, and save it. Also you can add your own recipe! <br> <br>
-    
-                </p>
-               <button>View Project</button>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>masazablah2@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0597594858</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Masa-Zablah-Resume.pdf" download="Masa-Zablah-Resume.pdf" class="button btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" id="" cols="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button btn2">Submit</button>
+                    </form>
+                </div>
             </div>
-            <img src="images/recipe.jpg" alt="cookley website" class="cookley-img">
-            <br><br>
-        </main>
-
-      
-
+        </div>
         
+    </div>
 
-        
-    </body>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
 </html>
+
