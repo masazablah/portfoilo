@@ -348,11 +348,16 @@ nav .fa-regular ,nav .fa-solid{
       margin: 25px;
   }
 
+  nav ul li a{
+    color: white;
+  }
   nav ul .fa-regular{
       position: absolute;
       top: 25px;
       left: 25px;
       cursor: pointer;
+      color: white;
+
   }
 
   .sub-title{
