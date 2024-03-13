@@ -341,6 +341,7 @@ nav .fa-regular ,nav .fa-solid{
       padding-top: 50px;
       z-index: 2;
       transition: right 0.5s;
+      color: white;
   }
 
   nav ul li {
@@ -351,6 +352,7 @@ nav .fa-regular ,nav .fa-solid{
   nav ul li a{
     color: white;
   }
+
   nav ul .fa-regular{
       position: absolute;
       top: 25px;
